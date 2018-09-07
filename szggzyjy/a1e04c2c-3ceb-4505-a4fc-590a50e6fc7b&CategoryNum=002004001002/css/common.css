@@ -1,0 +1,549 @@
+/* yui3 reset.css */
+html,body{
+    width: 100%;
+    overflow-x: hidden !important;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+abbr,
+acronym {
+    border: 0;
+    font-variant: normal
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    *font-size: 100%
+}
+
+legend {
+    color: #000
+}
+
+iframe {
+    display: block;
+}
+
+
+/* yui3 fonts */
+
+body {
+    font: 14px/1.231 "Microsoft YaHei", arial, helvetica, clean, sans-serif;
+    color: #333;
+}
+
+select,
+input,
+button,
+textarea {
+    font: 99% arial, helvetica, clean, sans-serif
+}
+
+table {
+    font-size: inherit;
+    font: 100%
+}
+
+pre,
+code,
+kbd,
+samp,
+tt {
+    font-family: monospace;
+    *font-size: 108%;
+    line-height: 100%
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* utilities */
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.l {
+    float: left !important;
+}
+
+.r {
+    float: right !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.invisible {
+    visibility: hidden !important;
+}
+
+
+/*! grid system 24栅格 998px */
+
+.ewb-container {
+    width: 998px;
+    margin: 0 auto;
+}
+
+.ewb-row {
+    overflow: hidden;
+}
+
+.ewb-span24 {
+    width: 998px;
+    float: left;
+}
+
+.ewb-span23 {
+    width: 956px;
+    float: left;
+}
+
+.ewb-span22 {
+    width: 914px;
+    float: left;
+}
+
+.ewb-span21 {
+    width: 872px;
+    float: left;
+}
+
+.ewb-span20 {
+    width: 830px;
+    float: left;
+}
+
+.ewb-span19 {
+    width: 788px;
+    float: left;
+}
+
+.ewb-span18 {
+    width: 746px;
+    float: left;
+}
+
+.ewb-span17 {
+    width: 704px;
+    float: left;
+}
+
+.ewb-span16 {
+    width: 662px;
+    float: left;
+}
+
+.ewb-span15 {
+    width: 620px;
+    float: left;
+}
+
+.ewb-span14 {
+    width: 578px;
+    float: left;
+}
+
+.ewb-span13 {
+    width: 536px;
+    float: left;
+}
+
+.ewb-span12 {
+    width: 494px;
+    float: left;
+}
+
+.ewb-span11 {
+    width: 452px;
+    float: left;
+}
+
+.ewb-span10 {
+    width: 410px;
+    float: left;
+}
+
+.ewb-span9 {
+    width: 368px;
+    float: left;
+}
+
+.ewb-span8 {
+    width: 326px;
+    float: left;
+}
+
+.ewb-span7 {
+    width: 284px;
+    float: left;
+}
+
+.ewb-span6 {
+    width: 242px;
+    float: left;
+}
+
+.ewb-span5 {
+    width: 200px;
+    float: left;
+}
+
+.ewb-span4 {
+    width: 158px;
+    float: left;
+}
+
+.ewb-span3 {
+    width: 116px;
+    float: left;
+}
+
+.ewb-span2 {
+    width: 74px;
+    float: left;
+}
+
+.ewb-span1 {
+    width: 32px;
+    float: left;
+}
+
+.ewb-ml10 {
+    margin-left: 10px;
+}
+
+.ewb-mt10 {
+    margin-top: 10px;
+}
+
+
+
+/** 
+ * 以下可追加项目中的公共样式，
+ * 比如body上进行全局的文字设置（字体，大小，行高），全局a链接的基本状态定义，
+ * 适合页面的栅格系�?
+ * 页面公共头尾部分�?
+ */
+
+body {
+    background:#f1f1f1;
+}
+
+.ewb-wrap {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.ewb-topbar {
+    font-size: 12px;
+    height: 32px;
+    line-height: 32px;
+    background: url(../images/top_bg.jpg) bottom repeat-x;
+}
+
+.ewb-toplink {
+    color: #333;
+}
+
+.ewb-topleft {
+    padding-left: 7px;
+}
+
+.ewb-topright {
+    padding-right: 6px;
+}
+
+.ewb-banner {
+    padding: 1px 0;
+}
+
+.ewb-banner img {
+    display: block;
+}
+
+
+/* 导航 */
+
+.ewb-nav-shell {
+    border: 1px solid #005787;
+}
+
+.ewb-nav {
+    border: 1px solid #3499d0;
+    height: 32px;
+    background: url(../images/nav_bg.jpg) bottom repeat-x;
+}
+
+.ewb-nav-items > li {
+    float: left;
+    height: 32px;
+    margin-left: 25px;/*40*/
+}
+.ewb-nav-items > li.first {
+    float: left;
+    height: 32px;
+    margin-left: 28px;
+}
+
+.ewb-nav-items > li > a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 0 11px;
+}
+
+.ewb-nav-items > li.first > a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 0 16px;
+}
+
+.ewb-nav-items > li > a:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+}
+
+
+.ewb-nav-items  li.current  a {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 0 11px;
+}
+.ewb-nav-items  li.first.current  a {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 0 16px;
+}
+
+.ewb-subnav {
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    background-color: #ebefec;
+}
+
+.ewb-old-link {
+    display: block;
+    height: 23px;
+    line-height: 23px;
+    color: #e51d02;
+	font-weight:bold;
+    text-align: center;
+    margin-left: 4px;
+    margin-top: 3px;
+    margin-right: 7px;
+}
+
+.ewb-sinput {
+    display: block;
+    width: 165px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #e3e3e3;
+    border-right: 0;
+    outline: none;
+    margin-top: 3px;
+    text-indent: 5px;
+}
+
+.ewb-sbtn {
+    display: block;
+    width: 49px;
+    height: 24px;
+    border: 0;
+    outline: none;
+    background: url(../images/s_ico.png) center no-repeat #ef7b09;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+
+/* 底部 */
+
+.ewb-links {
+    text-align: center;
+    color: #fff;
+    line-height: 30px;
+    height: 30px;
+    background-color: #056699;
+	font-size:12px;
+}
+
+.ewb-links a {
+    color: #fff;
+}
+
+.ewb-footer {
+    height: 85px;
+	font-size:12px;
+}
+
+.ewb-footer-txt {
+    float:left;
+    /*margin-left:220px;*/
+    width:550px;
+    line-height: 22px;
+    text-align: center;
+    padding-top: 11px;
+    color: #666;
+}
+.left1 {
+	width:221px;
+	margin:0 auto;
+	padding-top:5px;
+}
+.LeftMenu {
+	height:44px;
+	background-repeat:no-repeat;
+	background-position:center;
+	padding-left:50px;
+	padding-right:50px;
+}
+.LeftMenu a {
+	display:block;
+}
+.LeftMenuSub{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px dashed #ccc;
+	padding-left:70px;
+}
+
+.LeftMenuSubSj{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px dashed #ccc;
+	padding-left:80px;
+}
+
+
