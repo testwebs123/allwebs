@@ -1,0 +1,225 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/show.css">
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <title>宿州市招标交易平台</title>
+    <script>
+        // var name = prompt('请输入访问密码？');
+        // if(name != 123456){
+        //     alert('密码错误，无法访问');
+        //     location.href= "http://www.baidu.com";
+        // }
+    </script>
+    <script type="text/javascript"> 
+    $(document).ready(function () { 
+        var $img = $("#mainContent img"); 
+        $.each($img, function (i) { 
+            var imgwidth = $(this).width(); 
+            var imgheight = $(this).height(); 
+            var bl = imgwidth / imgheight; 
+            var height1 = 870 / bl; 
+            if (imgwidth > 870) { 
+                $(this).css("width", "960px"); 
+                $(this).css("height", height1 + "px"); 
+            } 
+            else { 
+                $(this).css("width", imgwidth); 
+                $(this).css("height", imgheight); 
+            } 
+        }); 
+        zishiy();
+    });
+    $(window).resize(function(){
+        zishiy();
+    })
+    function zishiy(){
+        $(".ewb-list-bd").height($(window).height()-$(".ewb-topbar").height()-$(".ewb-banner").height()-$(".ewb-nav-shell").height()-$(".ewb-bread").height()-$(".ewb-links").height()-$(".tf-footer").height()-10);
+    }
+    </script>
+</head>
+
+<body style="">
+    <div class="ewb-wrap">
+        <div id="qp">
+            <div class="clearfix ewb-topbar">
+                <div class="ewb-container">
+                    <div class="l ewb-topleft">
+                        <script type="text/javascript" language="javascript" >
+                                function getDateWeek()
+                                {
+                                todayDate = new Date();
+                                date = todayDate.getDate();
+                                month= todayDate.getMonth() +1;
+                                year= todayDate.getYear();
+                                var dateweek = "今天是：";
+                                if(navigator.appName == "Netscape")
+                                {
+                                  dateweek = dateweek + (1900+year) + "年" + month + "月" + date + "日 ";
+                                }
+                                if(navigator.appVersion.indexOf("MSIE") != -1)
+                                {
+                                  dateweek = dateweek + year + "年" + month + "月" + date + "日 ";
+                                }
+                                switch(todayDate.getDay())
+                                {
+                                case 0:dateweek += "星期日";break;
+                                case 1:dateweek += "星期一";break;
+                                case 2:dateweek += "星期二";break;
+                                case 3:dateweek += "星期三";break;
+                                case 4:dateweek += "星期四";break;
+                                case 5:dateweek += "星期五";break;
+                                case 6:dateweek += "星期六";break;
+                                }
+                                return dateweek;
+                                }
+                                document.write(getDateWeek());
+                                </script>
+                    </div>
+                    <div class="r ewb-topright">
+                        <a href="javascript:void(0)" class="ewb-toplink">设为首页</a> | <a href="javascript:void(0)" onclick="shoucang(document.title,window.location)" class="ewb-toplink">加入收藏</a>
+                    </div>
+                </div>
+            </div>
+            <div class="ewb-banner" style="background-color: #f7f7f7; text-align: center;">
+                <img width="998" style="display: inline-block;" src="../images/bgs.png" alt="">
+            </div>
+            <!-- 导航 -->
+            <div class="ewb-nav-shell">
+                <div class="ewb-nav">
+                    <div class="ewb-container">
+                    <ul class="ewb-nav-items clearfix">
+                        <li id="n000" class="first">
+                            <a href="#">
+                                首 页
+                            </a>
+                        </li>
+                        <li id="n001">
+                            <a href="#">
+                                企业新闻
+                            </a>
+                        </li>
+                        <li id="n005">
+                            <a href="#">
+                                办事指南 
+                            </a>
+                        </li>
+                        <li id="n006">
+                            <a href="#">
+                                资料下载
+                            </a>
+                        </li>
+                        <li id="n008">
+                            <a href="#">
+                                曝光台
+                            </a>
+                        </li>
+                        <li id="n018">
+                            <a href="#">
+                                信用查询
+                            </a>
+                        </li>
+                         <li id="n019">
+                            <a href="#">
+                                组织机构
+                            </a>
+                        </li>
+                         <li id="n022">
+                            <a href="#">
+                                合同备案
+                            </a>
+                        </li>
+                         <li id="n007">
+                            <a href="#">
+                                名录登记
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 中间部分 -->
+            <div class="ewb-container">
+                <div class="ewb-row ewb-mt6" style="background: #fff;">
+                    <div class="ewb-bread" style="background: #fff;">
+                        您当前的位置：
+                            <a href="#">首页</a>
+                            &gt; <a href="#">交易信息</a>
+                            &gt; <a href="#">泗县</a>
+                            &gt; <a href="#">建设工程</a>
+                            &gt; <span>中标公示</span>
+                    </div>
+                    <div class="ewb-list-bd" style="overflow-y:auto; padding-right:30px">
+                        <div class="row">
+                            <div class="ewb-show-tt" style="margin-top: 30px">
+                                泗县环县东路墩集段（草大路）工程
+                            </div>
+                            <div class="ewb-show-sub">
+                                信息时间：2017-12-18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;作者:
+                            </div>
+                            <p style="text-align:center;line-height:33px;background:white">
+    <strong><span style="font-size:24px;font-family:宋体;color:black;background:white">泗县环县东路墩集段（草大路）工程中标结果公示</span></strong>
+</p>
+<p style="text-align:center;line-height:33px;background:white">
+    <span style="font-family:&#39;Times New Roman&#39;,serif;color:#333333;background:white">&nbsp;</span>
+</p>
+<p style="line-height:40px;background:white">
+    <strong><span style="font-family:宋体;color:#333333;background:white">泗县环县东路墩集段（草大路）工程</span></strong><strong><span style="font-family:宋体;color:black;background:white">的中标候选人公示已结束，中标人已确定。</span></strong>
+</p>
+<p style="line-height:40px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">现将中标结果公示：</span></strong>
+</p>
+<p style="line-height:40px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">项目名称：</span></strong><strong><span style="font-family:宋体;color:#333333;background:white">泗县环县东路墩集段（草大路）工程</span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">项目编号：</span></strong><strong><span style="font-family:宋体;color:#333333;background:white">SXZBCG-G2017-1011</span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">中标单位名称：</span></strong><strong><span style="font-family:宋体;color:#333333;background:white">安徽必胜工程建设有限公司</span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">项目经理：郝昌军</span></strong><strong><span style="font-family:宋体;color:#333333;background:white">&nbsp; </span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">中标金额：25659835.00元（贰仟伍佰陆拾伍万玖仟捌佰叁拾伍元整）</span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">工期：90日历天</span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:black;background:white">工程质量：</span></strong><strong><span style="font-family:宋体;color:#333333;background:white">合格</span></strong>
+</p>
+<p style="line-height:35px;background:white">
+    <strong><span style="font-family:宋体;color:#333333;background:white"><br/></span></strong>
+</p>
+<p style="margin-top:10px;margin-right:0;margin-bottom:10px;margin-left: 0;line-height:32px;background:white">
+    <strong><span style="font-family:宋体;color:#333333;background:white">招&nbsp;标&nbsp;人：泗县交通运输局&nbsp;13855753630</span></strong>
+</p>
+<p style="margin-bottom: 12px; line-height: 32px; background: white;">
+    <strong><span style="font-family:宋体;color:#333333;background:white">代理单位：安徽安天利信工程管理股份有限公司&nbsp;18326965223</span></strong>
+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 底部 -->
+            <div class="ewb-links">
+                <a href="#">设为首页</a> | 
+                <a href="#">加入收藏夹</a> | 
+                <a href="#">联系我们</a> | 
+                <a href="#">网站地图</a> | 
+                <a href="#">隐私声明</a>
+            </div>
+            <div class="tf-footer" style="text-align: center; font-size:14px !important; color:#666; padding: 15px 0; background-color: #fff">
+                欢迎光临宿州市招标交易平台
+            </div>
+        </div>
+    </div>
+
+
+</body></html>
